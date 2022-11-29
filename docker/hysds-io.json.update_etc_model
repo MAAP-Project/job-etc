@@ -1,0 +1,34 @@
+{
+    "label" : "Update Performance Estimator Model",
+    "allowed_accounts": [ "ops" ],
+    "submission_type":"individual",
+    "params" : [
+      {
+          "name": "model_url_opt",
+          "from": "value",
+          "value": "--model_url"
+      },
+      {
+          "name": "model_url",
+          "from": "submitter"
+      },
+      {
+          "name": "version_opt",
+          "from": "value",
+          "value": "--version"
+      },
+      {
+          "name": "version",
+          "from": "submitter"
+      },
+      {
+          "name": "tag_opt",
+          "from": "value",
+          "value": "--tag"
+      },
+      {
+          "name": "tag",
+          "from": "submitter"
+      }
+    ]
+  }

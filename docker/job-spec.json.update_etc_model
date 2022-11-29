@@ -1,0 +1,38 @@
+{
+  "command": "/home/ops/verdi/ops/SOAMC-job-etc/update.py",
+  "imported_worker_files": {
+    "/export/home/hysdsops/.aws": ["/home/ops/.aws", "ro"],
+    "/export/home/hysdsops/.azure": ["/home/ops/.azure", "ro"],
+    "/export/home/hysdsops/.netrc": "/home/ops/.netrc"
+  },
+  "recommended-queues" : [ "factotum-job_worker-small" ],
+  "disk_usage":"1GB",
+  "soft_time_limit": 1800,
+  "time_limit": 2100,
+  "params" : [
+    {
+        "name": "model_url_opt",
+        "destination": "positional"
+    },
+    {
+        "name": "model_url",
+        "destination": "positional"
+    },
+    {
+        "name": "version_opt",
+        "destination": "positional"
+    },
+    {
+        "name": "version",
+        "destination": "positional"
+    },
+    {
+        "name": "tag_opt",
+        "destination": "positional"
+    },
+    {
+        "name": "tag",
+        "destination": "positional"
+    }
+  ]
+}

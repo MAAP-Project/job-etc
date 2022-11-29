@@ -1,0 +1,45 @@
+name: soamc
+channels:
+  - http://ssb.stsci.edu/astroconda
+  - defaults
+dependencies:
+  - ca-certificates=2022.3.29
+  - certifi=2021.10.8
+  - libcxx=12.0.0
+  - libffi=3.3
+  - ncurses=6.3
+  - openssl=1.1.1n
+  - pip=21.2.4
+  - python=3.9.12
+  - readline=8.1.2
+  - setuptools=61.2.0
+  - sqlite=3.38.2
+  - tk=8.6.11
+  - tzdata=2022a
+  - wheel=0.37.1
+  - xz=5.2.5
+  - zlib=1.2.12
+  - pip:
+    - astropy==5.0.4
+    - charset-normalizer==2.0.12
+    - click==8.1.2
+    - flask==2.1.1
+    - idna==3.3
+    - importlib-metadata==4.11.3
+    - itsdangerous==2.1.2
+    - jinja2==3.1.1
+    - markupsafe==2.1.1
+    - numpy==1.22.3
+    - packaging==21.3
+    - pandas==1.4.2
+    - psutil==5.9.0
+    - pyerfa==2.0.0.1
+    - pyparsing==3.0.8
+    - python-dateutil==2.8.2
+    - pytz==2022.1
+    - pyyaml==6.0
+    - requests==2.27.1
+    - six==1.16.0
+    - urllib3==1.26.9
+    - werkzeug==2.1.1
+    - zipp==3.8.0
