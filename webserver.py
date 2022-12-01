@@ -137,5 +137,5 @@ if __name__ == '__main__':
     # parse arguments
     args = parser.parse_args()
 
-    app.run(debug=True)
-    #app.run(host='soamc-mozart.jpl.nasa.gov', debug=True)
+    #app.run(debug=True)
+    app.run(host='0.0.0.0', debug=True)
