@@ -1,0 +1,15 @@
+FROM python:3.9
+
+ARG WRK_DIR=/home/job-etc
+
+WORKDIR ${WRK_DIR}
+
+# RUN git clone https://github.com/MAAP-Project/job-etc.git
+COPY . ${WRK_DIR}
+RUN pip install -r ${WRK_DIR}/requirements.txt
+
+RUN chmod +x ${WRK_DIR}/entrypoint.sh
+
+EXPOSE 5000
+
+ENTRYPOINT ["/home/job-etc/entrypoint.sh"]

@@ -11,7 +11,7 @@ warnings.filterwarnings('ignore')
 
 from sql_database import SQLDatabase
 
-es_endpoint = "http://localhost:9200"
+es_endpoint = "http://18.236.110.240:49200/"
 
 def runtime_prediction(jobtype, instance="c5.9xlarge", size=100):
     """ Returns the average and standard deviation of the runtime for a job type.

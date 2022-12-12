@@ -11,7 +11,7 @@ from hysds.celery import app
 
 # new metrics: http://localhost:9200
 def return_jobs(jobtype="*", instance="*", start_idx=0, start_timestamp="2020-01-01T00:00:00",
-                es_index="_search", es_endpoint="http://localhost:9200", status="job-completed", 
+                es_index="_search", es_endpoint="http://18.236.110.240:49200/", status="successful", 
                 size=1000, verbose=False, return_total=False):
 
     # set up elastic search query
